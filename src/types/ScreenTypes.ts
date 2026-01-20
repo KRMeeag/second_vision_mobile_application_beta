@@ -1,1 +1,1 @@
-export type Screen = "splash" | "login" | "reset" | "signup";
+export type Screen = "splash" | "login" | "reset" | "signup" | "home";
