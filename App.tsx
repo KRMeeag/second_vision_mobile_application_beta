@@ -7,12 +7,24 @@ import SplashScreen from "./src/screens/SplashScreen";
 import LoginScreen from "./src/screens/LoginScreen";
 import ResetScreen from "./src/screens/ResetScreen";
 import SignupScreen from "./src/screens/SignupScreen";
+import HomeScreen from "./src/screens/HomeScreen";
 
 export default function App() {
-  const [screen, setScreen] = useState<Screen>("splash");
+  const [screen, setScreen] = useState<Screen>("home");
 
   if (screen === "splash") {
     return <SplashScreen onContinue={() => setScreen("login")} />;
+  }
+
+  if (screen === "home") {
+    return (
+      <HomeScreen
+        onCamera={() => console.log("Camera Pressed")}
+        onPair={() => console.log("Pair Pressed")}
+        onCaregivers={() => console.log("Caregivers Pressed")}
+        onSettings={() => console.log("Settings Pressed")}
+      />
+    );
   }
 
   return (
