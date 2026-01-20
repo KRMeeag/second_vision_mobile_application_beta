@@ -3,27 +3,13 @@ import { StyleSheet } from "react-native";
 export const homeStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FBF7F1",
-    paddingHorizontal: 20,
-    paddingTop: 60,
-  },
-  header: {
-    fontSize: 28,
-    fontWeight: "800",
-    color: "#0A4FA3",
-    textAlign: "center",
-    marginBottom: 8,
-  },
-  subheader: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#555",
-    textAlign: "center",
-    marginBottom: 40,
+    backgroundColor: "#FFFFFF",
+    paddingHorizontal: 15,
+    paddingTop: 75,
   },
   buttonContainer: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "flex-start",
   },
   button: {
     borderRadius: 20,
@@ -37,42 +23,87 @@ export const homeStyles = StyleSheet.create({
   },
   cameraButton: {
     backgroundColor: "#0A4FA3",
-    height: 200,
+    height: 402,
     marginBottom: 30,
     paddingVertical: 30,
   },
   cameraIcon: {
-    width: 64,
-    height: 64,
-    marginBottom: 12,
-    resizeMode: "contain",
+    width: 405,
+    height: 207,
+    resizeMode: "cover",
   },
+  buttonIcon: {
+    fontSize: 80,
+    fontWeight: "700",
+    color: "#fff",
+  },
+  buttonText: {
+    fontSize: 80,
+    fontWeight: "700",
+    color: "#fff",
+  },
+
+  // --- GRID LAYOUT ---
   gridContainer: {
     flexDirection: "row",
-    flexWrap: "wrap",
     justifyContent: "space-between",
-    gap: 15,
+    marginBottom: 15,
   },
-  gridButton: {
-    backgroundColor: "#fff",
+  gridIcon: {
+    fontSize: 80,
+  },
+
+  pairButton: {
+    backgroundColor: "#70A9A1",
     width: "48%",
     height: 140,
     borderWidth: 2,
-    borderColor: "#0A4FA3",
-    paddingVertical: 20,
+    borderColor: "#70A9A1",
+    padding: 10,
+    gap: 8,
   },
-  buttonIcon: {
-    fontSize: 40,
-    marginBottom: 8,
-  },
-  buttonText: {
+  pairText: {
     fontSize: 16,
     fontWeight: "700",
     color: "#fff",
   },
-  gridButtonText: {
+
+  caregiverButton: {
+    backgroundColor: "#FC440F",
+    width: "48%",
+    height: 140,
+    borderWidth: 2,
+    borderColor: "#FC440F",
+    padding: 10,
+    gap: 8,
+  },
+  caregiverText: {
     fontSize: 16,
     fontWeight: "700",
-    color: "#0A4FA3",
+    color: "#fff",
+  },
+
+// --- SETTINGS SECTION ---
+  settingsWrapper: {
+    alignItems: "center",
+    marginTop: 15,
+  },
+   settingsIcon: {
+    fontSize: 120,
+  },
+
+  settingsButton: {
+    backgroundColor: "#fff",
+    width: 375,
+    height: 185,
+    borderWidth: 2,
+    borderColor: "#fff",
+    padding: 10,
+    gap: 8,
+  },
+  settingsText: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#000",
   },
 });

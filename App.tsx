@@ -10,7 +10,7 @@ import SignupScreen from "./src/screens/SignupScreen";
 import HomeScreen from "./src/screens/HomeScreen";
 
 export default function App() {
-  const [screen, setScreen] = useState<Screen>("home");
+  const [screen, setScreen] = useState<Screen>("splash");
 
   if (screen === "splash") {
     return <SplashScreen onContinue={() => setScreen("login")} />;
